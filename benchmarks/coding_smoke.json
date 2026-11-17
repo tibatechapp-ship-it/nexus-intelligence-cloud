@@ -1,0 +1,22 @@
+[
+  {
+    "id": "py-string-normalize-001",
+    "prompt": "Write a Python function normalize_identifier(value: str) -> str that strips whitespace, lowercases text, and replaces runs of spaces or hyphens with a single underscore. Include a short docstring."
+  },
+  {
+    "id": "py-safe-divide-001",
+    "prompt": "Write a Python function safe_divide(numerator: float, denominator: float) -> float that raises ValueError when the denominator is zero. Include type hints and a docstring."
+  },
+  {
+    "id": "py-group-records-001",
+    "prompt": "Write a Python function group_by_key(records: list[dict], key: str) -> dict that groups records by the value at key. Missing keys should be grouped under None. Include type hints and a docstring."
+  },
+  {
+    "id": "py-retry-policy-001",
+    "prompt": "Write a Python function retry_delays(attempts: int, base_seconds: float, max_seconds: float) -> list[float] that returns capped exponential backoff delays. Reject negative attempts and negative time values with ValueError. Include type hints and a docstring."
+  },
+  {
+    "id": "py-parse-json-001",
+    "prompt": "Write a Python function parse_json_object(text: str) -> dict that parses JSON and raises ValueError unless the top-level value is an object. Include type hints and a docstring."
+  }
+]
