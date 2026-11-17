@@ -1,8 +1,8 @@
 """FastAPI application for the NEXUS Intelligence Cloud control plane."""
 
 import asyncio
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
-from typing import AsyncIterator
 
 import httpx
 from fastapi import FastAPI
