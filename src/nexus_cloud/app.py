@@ -1,5 +1,6 @@
 """FastAPI application for the NEXUS Intelligence Cloud control plane."""
 
+import asyncio
 from contextlib import asynccontextmanager
 from typing import AsyncIterator
 
@@ -26,8 +27,6 @@ async def lifespan(application: FastAPI) -> AsyncIterator[None]:
             max_keepalive_connections=settings.max_concurrent_generations,
         ),
     )
-    import asyncio
-
     application.state.generation_semaphore = asyncio.Semaphore(
         settings.max_concurrent_generations
     )
